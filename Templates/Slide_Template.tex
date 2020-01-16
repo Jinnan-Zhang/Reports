@@ -1,0 +1,62 @@
+\documentclass{beamer}
+
+\usepackage{amssymb} %Mathesymbole
+\usepackage{wasysym} %Mehr symbole
+\usepackage[version=4]{mhchem} 
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usetikzlibrary{positioning}
+\usepackage{appendixnumberbeamer}
+\usepackage{eso-pic}
+\usepackage{stmaryrd}
+\usepackage{wasysym} %Smileys
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+\setbeamercolor{background canvas}{bg=white}
+
+\logo{\includegraphics[height=0.6cm]{Logo/TUM.png}}
+
+\newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
+\put(\LenToUnit{0.92\paperwidth},\LenToUnit{0.86\paperheight}){#1}}}
+\AddToShipoutPictureFG{
+  \AtPagemyUpperLeft{{\includegraphics[width=1cm,keepaspectratio]{Logo/JUNO.pdf}}}
+}%
+
+\definecolor{UniBlue}{RGB}{47,69,188}
+\definecolor{JunoRed}{RGB}{219,0,38}
+\definecolor{JunoBlue}{RGB}{57,117,199}
+\definecolor{JunoPink}{RGB}{248,0,246}
+\definecolor{JunoLila}{RGB}{169,0,255}
+\definecolor{JunoHellblau}{RGB}{0,255,255}
+\setbeamercolor{title}{fg=UniBlue}
+\setbeamercolor{frametitle}{fg=UniBlue}
+\setbeamercolor{structure}{fg=UniBlue}
+%\setbeamercolor{section in head/foot}{bg=JunoRed}
+
+%\logo{}
+% \usepackage{beamerthemesplit} // Activate for custom appearance
+
+\title[15th JUNO Collaboration Meeting]{Diffuse Supernova Neutrino Background: Understanding the Large Uncertainties in Flux Predictions and Detection Sensitivity in JUNO}
+\author{Julia Sawatzki}
+\date{2020/01/16}
+\institute[]{Physics Department E15 \\ Technical University Munich, Germany \\ julia.sawatzki@ph.tum.de}
+
+\begin{document}
+\frame{\titlepage}
+
+
+\section[Outline]{}
+\frame{
+\setcounter{tocdepth}{1}
+\tableofcontents}
+
+
+
+
+
+
+
+\end{document}
