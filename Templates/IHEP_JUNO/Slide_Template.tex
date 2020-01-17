@@ -19,11 +19,18 @@
 
 \logo{\includegraphics[height=0.6cm]{Logo/IHEP.pdf}}
 
+\newcommand\AtPagemyUpperRight[1]{\AtPageLowerLeft{%
+\put(\LenToUnit{0.88\paperwidth},\LenToUnit{0.86\paperheight}){#1}}}
 \newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
-\put(\LenToUnit{0.92\paperwidth},\LenToUnit{0.86\paperheight}){#1}}}
+\put(\LenToUnit{0.01\paperwidth},\LenToUnit{0.86\paperheight}){#1}}}
+
+% \AddToShipoutPictureFG{
+%   \AtPagemyUpperRight{{\includegraphics[width=1cm,keepaspectratio]{Logo/IHEP.pdf}}}
+% }%
 \AddToShipoutPictureFG{
   \AtPagemyUpperLeft{{\includegraphics[width=1cm,keepaspectratio]{Logo/JUNO.pdf}}}
 }%
+
 
 \definecolor{UniBlue}{RGB}{47,69,188}
 \definecolor{JunoRed}{RGB}{219,0,38}
@@ -34,7 +41,7 @@
 \setbeamercolor{title}{fg=UniBlue}
 \setbeamercolor{frametitle}{fg=UniBlue}
 \setbeamercolor{structure}{fg=UniBlue}
-%\setbeamercolor{section in head/foot}{bg=JunoRed}
+\setbeamercolor{section in head/foot}{bg=JunoRed}
 
 %\logo{}
 % \usepackage{beamerthemesplit} // Activate for custom appearance
