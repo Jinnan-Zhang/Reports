@@ -8,3 +8,5 @@
 *.vrb
 *.gz
 *.fls
+*.blg
+*.bbl

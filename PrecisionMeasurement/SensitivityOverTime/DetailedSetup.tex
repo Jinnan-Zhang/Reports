@@ -1,0 +1,115 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%showpacs,preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+\usepackage[colorlinks,
+linkcolor=black,
+anchorcolor=black,
+citecolor=blue,
+urlcolor=blue
+]{hyperref}% link the cite or ref to itself
+
+
+\begin{document}
+
+%\preprint{APS/123-QED}
+
+\title{Three-Flavor Reactor Antineutrino Analysis of KamLAND}% Force line breaks with \\
+
+%\input {author_list.tex}
+
+\author{J.N. Zhang}
+ \altaffiliation[Also at ]{Physics Department, University of Chinese Academy of Sciences, Beijing, Beijing 101408, China}%Lines break automatically or can be forced with \\
+%\author{Second Author}%
+ %\email{Second.Author@institution.edu}
+\affiliation{
+	 Institute of High Energy Physics, Beijing, Beijing 100049, China\\}%
+
+%\collaboration{MUSO Collaboration}%\noaffiliation
+
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+This is abstract.
+
+\begin{description}
+%\item[Usage]
+%Secondary publications and information retrieval purposes.
+\item[Key words]
+Reactor Antineutrino, Neutrino Oscillation, JUNO, Daya Bay
+\item[PACS]
+14.60.Pq, 26.65.+t, 28.50.Hw, 91.35.-x
+
+\end{description}
+\end{abstract}
+
+\pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
+                             % Classification Scheme.
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:Setup} Basic Setup}
+Some detailed algorithm or data could be stated here.
+\bibliography{ref}% bibliography
+
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
